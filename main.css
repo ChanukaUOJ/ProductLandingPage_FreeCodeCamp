@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(230, 230, 230);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+#header{
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: rgb(230, 230, 230);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 1;
+}
+
+#header img{
+    float: left;
+    width: 400px;
+
+}
+
+#nav-bar{
+    float: right;
+    margin-top: 10px;
+}
+
+#nav-bar ul li{
+    display: inline;
+    padding-left: 20px;
+}
+
+#nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+    margin-top: 150px;
+}
+
+form{
+    margin: auto;
+}
+
+form h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+form input{
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+form button{
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(255, 181, 44);
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+
+#video{
+    display: block;
+    margin: auto;
+}
+
+.services{
+    display: flex;
+    position: relative;
+    top: 40px;
+}
+
+.iconSide{
+    position: inherit;
+    margin-top: 155px;
+}
+
+.iconSide i{
+    padding-bottom: 100px;
+}
+
+.fa-battery-full{
+    padding-bottom: 0px;
+}
+
+.fa-solid {
+    transform: scale(2.8);
+    color: rgb(255, 139, 31);
+}
+
+.side{
+    margin-left: 70px;
+    width: 88%;
+    margin-top: 35px;
+}
+
+.side p{
+    padding-bottom: 35px;
+}
+
+.pricing{
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.price{
+    border: 1px solid black;
+    margin-right: 30px;
+    padding: 0 0 20px 0;
+}
+
+.price ul li{
+    display: flex;
+    text-decoration: none;
+    line-height: 0.9em;
+    justify-content: center;
+}
+
+.price h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title{
+    padding: 0 50px;
+    background-color: rgb(206, 206, 206);
+    margin-bottom: 20px;
+}
+
+.select{
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(255, 181, 44);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+#footer{
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgb(53, 53, 53);
+}
+ 
+.bottombox{
+    display: block;
+    float: right;
+    padding-bottom: 20px;
+}
+
+#footer ul{
+    float: right;
+}
+
+#footer ul li{
+    display: inline;
+    text-decoration: none;
+}
+
+#footer ul li a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.select:hover{
+    background-color: rgb(255, 136, 24);
+    cursor: pointer;
+    transition-duration: 2s;
+}
+
+
+@media (min-width: 1000px) {
+    .container{
+        width: 65%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container{
+        width: 55%;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .pricing{
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .price{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        width: 85%;
+        margin: auto;
+    }
+
+    #header{
+        display: block;
+    }
+
+    #header img{
+        float: none;
+    }
+
+    #nav-bar{
+        float: none;
+    }
+
+    #nav-bar ul li{
+        display: block;
+        text-align: center;
+    }
+
+    .content{
+        margin-top: 200px;
+    }
+
+    .pricing{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    .price{
+        margin-bottom: 40px;
+    }
+    
+}
+
